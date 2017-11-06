@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_light_controller"
+    android:orientation="vertical" >
+    <com.onemore.ble.maintain.view.CustomerViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+	<TextView android:layout_width="match_parent" 
+	    android:layout_height="2dp"
+	    android:background="#bf8464"/>
+    <TabWidget
+        android:id="@+id/tw_switch_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_list_item_height"
+        android:background="@drawable/bg_table"
+        android:tabStripEnabled="false" >
+
+        <ImageButton
+            android:id="@+id/ib_device_control_light"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_light_bg"
+            android:contentDescription="@string/app_name"
+            android:onClick="deviceControlClick"
+            android:tileMode="disabled" />
+
+        <ImageButton
+            android:id="@+id/ib_device_control_timer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_timefunction_bg"
+            android:contentDescription="@string/app_name"
+            android:onClick="deviceControlClick"
+            android:tileMode="disabled" />
+
+        <ImageButton
+            android:id="@+id/ib_device_control_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_setting_bg"
+            android:contentDescription="@string/app_name"
+            android:onClick="deviceControlClick"
+            android:tileMode="disabled" />
+    </TabWidget>
+
+</LinearLayout>

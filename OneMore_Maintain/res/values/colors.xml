@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color_title_black">#ff474443</color>
+    <color name="text_color_black">#ff302b2a</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="holo_blue_light2">#aa33b5e5</color>
+	<color name="search_list_item_text_color">#fff3f3f3</color>
+    <color name="light_brightness_bg_color">#ffe5e5e5</color>
+    <color name="system_bg_color">#fffefefe</color>
+    <color name="popup_dialog_title_textcolor">#ff1cc6e3</color>    
+    <color name="time_picker_current_textcolor">#ff1cc6e3</color>
+    <color name="time_function_button_textcolor">#ffa1a1a1</color>
+    <color name="local_music_tab_item_text_color_unchecked">#ff959595</color>
+    <color name="setting_item_background_color">#fff6f5f5</color>
+    <color name="play_music_list_item_high_color">#ff33b5e5</color>
+    <color name="pink">#ff626262</color>
+    <color name="black">#000000</color>
+    <color name="trans_white">#afffffff</color>
+    <color name="blue">#0000ff</color>
+    <color name="divider_color">#6fffffff</color>
+    <color name="bottom_color">#00000000</color>
+    <color name="top_color">#01589e</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#3f000000</color>
+    <color name="grey_white">#fff0f0f0</color>
+    <color name="grey_dark_light">#55666666</color>
+    <color name="grey_dark">#ff454545</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="holo_orange_dark">#ffff8800</color>
+    <color name="dialog_text_hint">#ffb0b0b0</color>
+    <color name="lightgreen">#FF78A00A</color>
+    <color name="grey">#FFC0C0C0</color>
+    <color name="darkgrey">#FF808080</color>
+    <color name="lightgrey">#FFDCDCDC</color>
+
+</resources>

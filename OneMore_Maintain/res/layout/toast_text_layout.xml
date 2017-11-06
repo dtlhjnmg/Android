@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/popupwindow_big_width"
+    android:layout_height="@dimen/popupwindow_big_height"
+    android:background="@drawable/bg_list"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+        <include layout="@layout/popupwindow_title_layout" />
+
+        <TextView
+            android:id="@+id/tv_popupwindow_text"
+            style="@style/global_system_text_style"
+            android:layout_width="@dimen/popupwindow_big_width"
+            android:layout_height="@dimen/popupwindow_big_content_height"
+            android:layout_marginLeft="@dimen/popupwindow_title_left"
+            android:layout_marginRight="@dimen/popupwindow_title_left"
+            android:gravity="center" />
+
+</LinearLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/system_margin_left"
+        android:layout_marginRight="@dimen/system_margin_left"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_function_list_item_height"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/global_system_text_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/power_switch" />
+
+            <ToggleButton
+                android:id="@+id/tb_timingfunction"
+                style="@style/toggle_button_style"
+                android:layout_marginTop="@dimen/timing_function_list_item_right" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_function_list_item_height"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/global_system_text_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/color_temperature" />
+
+            <RadioGroup
+                android:id="@+id/rg_color_temperature"
+                android:layout_width="@dimen/light_brightness_seekbar_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_warm_color"
+                    style="@style/global_system_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/time_function_radio_margin_right"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/button_radio_bg"
+                    android:text="@string/color_warm" />
+
+                <TextView
+                    style="@style/global_system_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/rb_cool_color"
+                    style="@style/global_system_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/button_radio_bg"
+                    android:text="@string/color_cool" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_function_list_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/global_system_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/light_brightness" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|top"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_time_function_brightness"
+                    style="@style/list_sub_text_style"
+                    android:layout_width="@dimen/light_brightness_seekbar_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center" />
+
+                <SeekBar
+                    android:id="@+id/sb_time_function_brightness"
+                    style="@style/edit_time_function_seekbar_style"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            android:contentDescription="@string/app_name" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/time_function_list_item_height"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/global_system_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_time" />
+
+                <Button
+                    android:id="@+id/bt_timing_time"
+                    style="@style/edit_time_function_button_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/arraw_right_icon"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/line"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/time_function_list_item_height"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/global_system_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/repeat" />
+
+                <LinearLayout
+                    android:id="@+id/bt_repeat"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="titleMenuClick"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_repeat"
+                        style="@style/global_system_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:layout_gravity="center_vertical|right"                         
+                        android:textColor="@color/time_function_button_textcolor"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/arraw_right_icon"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/line"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+    </LinearLayout>
+<!--  
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/global_system_white_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginBottom="@dimen/system_margin_left"
+        android:layout_marginLeft="@dimen/system_margin_left"
+        android:layout_marginRight="@dimen/system_margin_left"
+        android:background="@drawable/button_save_bg"
+        android:onClick="titleMenuClick"
+        android:text="@string/button_save" />
+-->
+</LinearLayout>

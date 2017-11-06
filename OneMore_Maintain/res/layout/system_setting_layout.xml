@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/system_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_list_item_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/system_margin_left"
+        android:layout_marginRight="@dimen/system_margin_left"
+        android:layout_marginTop="@dimen/time_picker_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/global_system_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/setting_device_time_icon"
+            android:drawablePadding="5dp"
+            android:text="@string/setting_device_time" />
+
+        <Button
+            android:id="@+id/bt_device_time"
+            style="@style/list_sub_text_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:onClick="titleMenuClick"
+            android:text="@string/setting_current_version" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arraw_right_icon"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/line"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_list_item_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/system_margin_left"
+        android:layout_marginRight="@dimen/system_margin_left"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/global_system_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/setting_update_icon"
+            android:drawablePadding="5dp"
+            android:text="@string/setting_check_version" />
+
+        <Button
+            android:id="@+id/bt_check_version"
+            style="@style/list_sub_text_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:onClick="titleMenuClick"
+            android:text="@string/setting_current_version" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arraw_right_icon"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/line"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_list_item_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/system_margin_left"
+        android:layout_marginRight="@dimen/system_margin_left"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_buy_light"
+            style="@style/setting_button_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/setting_buy_light_icon"
+            android:drawablePadding="5dp"
+            android:text="@string/setting_buy_light" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arraw_right_icon"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/line"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_list_item_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/system_margin_left"
+        android:layout_marginRight="@dimen/system_margin_left"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_about_us"
+            style="@style/setting_button_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/setting_about_us_icon"
+            android:drawablePadding="5dp"
+            android:text="@string/setting_about_us" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arraw_right_icon"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+	<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/line"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_list_item_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/system_margin_left"
+        android:layout_marginRight="@dimen/system_margin_left"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_contact_us"
+            style="@style/setting_button_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/setting_contact_us_icon"
+            android:drawablePadding="5dp"
+            android:text="@string/setting_contact_us" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arraw_right_icon"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/line"
+        android:contentDescription="@string/app_name" />
+</LinearLayout>

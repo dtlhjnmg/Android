@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 背景图 -->
+	<item>
+	    <bitmap android:src="@drawable/seekbar_bg" android:tileMode="disabled" android:gravity="top" /> 
+	  </item>
+	
+	<!--全部能量图  -->
+	<item>
+	    <bitmap android:src="@drawable/seekbar_bg" android:tileMode="disabled" android:gravity="top" /> 
+	  </item>
+	<!-- 进和能量图 -->
+	<item>
+	    <bitmap android:src="@drawable/seekbar_over" android:tileMode="disabled" android:gravity="top" /> 
+	  </item>
+</layer-list>

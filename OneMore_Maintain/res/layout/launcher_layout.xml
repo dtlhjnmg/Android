@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_common_white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title_layout" />
+
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="设备名称:" />
+
+                <TextView
+                    android:id="@+id/tv_device_name"
+                    style="@style/ble_label_content_style" />
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="电量:" />
+
+                <TextView
+                    android:id="@+id/tv_battery"
+                    style="@style/ble_label_content_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="设备Token:" />
+
+                <TextView
+                    android:id="@+id/tv_device_token"
+                    style="@style/ble_label_content_style" />
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="芯片平台类型:"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_chip_type"
+                    style="@style/ble_label_content_style"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="固件版本号:" />
+
+                <TextView
+                    android:id="@+id/tv_device_version"
+                    style="@style/ble_label_content_style" />
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="设备类型:" />
+
+                <TextView
+                    android:id="@+id/tv_device_type"
+                    style="@style/ble_label_content_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="锁状态:" />
+
+                <TextView
+                    android:id="@+id/tv_lock_state"
+                    style="@style/ble_label_content_style" />
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="开锁次数:" />
+
+                <TextView
+                    android:id="@+id/tv_open_count"
+                    style="@style/ble_label_content_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="密钥:" />
+
+                <EditText
+                    android:id="@+id/edt_aes_key"
+                    style="@style/ble_label_content_style"
+                    android:inputType="text"
+                    android:maxLength="32"
+                    android:text="58966742920133314130157812194037" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="开锁密码:" />
+
+                <EditText
+                    android:id="@+id/edt_open_password"
+                    style="@style/ble_label_content_style"
+                    android:inputType="text"
+                    android:maxLength="6"
+                    android:text="000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="设备号码:" />
+
+                <EditText
+                    android:id="@+id/edt_device_number"
+                    style="@style/ble_label_content_style"
+                    android:inputType="text"
+                    android:maxLength="32"
+                    android:text="1001000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_get_token"
+                    style="@style/button_ble_style"
+                    android:text="获取Token" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_set_time"
+                    style="@style/button_ble_style"
+                    android:text="同步时间"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/btn_get_battery"
+                    style="@style/button_ble_style"
+                    android:text="检测电量" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_open_lock"
+                    style="@style/button_ble_style"
+                    android:text="开锁" />
+
+                <Button
+                    android:id="@+id/btn_close_lock"
+                    style="@style/button_ble_style"
+                    android:text="复位/关锁" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_find_device"
+                    style="@style/button_ble_style"
+                    android:text="寻找设备" />
+
+                <Button
+                    android:id="@+id/btn_recover"
+                    style="@style/button_ble_style"
+                    android:text="恢复密码密钥" 
+                android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+				<Button
+                    android:id="@+id/btn_back"
+                    style="@style/button_ble_style"
+                    android:text="还车" 
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/btn_dfu"
+                    style="@style/button_ble_style"
+                    android:text="DFU升级" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="新密码:" />
+
+                <EditText
+                    android:id="@+id/edt_new_open_password"
+                    style="@style/ble_label_content_style"
+                    android:inputType="text"
+                    android:maxLength="6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/btn_change_password"
+                    style="@style/button_ble_style"
+                    android:text="更改密码" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="新密钥:" />
+
+                <EditText
+                    android:id="@+id/edt_new_aes_key"
+                    style="@style/ble_label_content_style"
+                    android:inputType="text"
+                    android:maxLength="32"
+                    android:enabled="false"
+                    android:text="58966742920133314130157812194037" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/btn_change_aes_key"
+                    style="@style/button_ble_style"
+                    android:text="更改密钥" />
+            </LinearLayout>
+            
+			<LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/ll_change_apn">"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="APN:" />
+
+                <EditText
+                    android:id="@+id/edt_apn"
+                    style="@style/ble_label_content_style"
+                    android:inputType="text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+	            <Button
+	                android:id="@+id/btn_change_apn"
+	                style="@style/button_ble_style"
+	                android:text="修改APN" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="服务器地址:" />
+
+                <EditText
+                    android:id="@+id/edt_server"
+                    style="@style/ble_label_content_style"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+	            <Button
+	                android:id="@+id/btn_change_server"
+	                style="@style/button_ble_style"
+	                android:text="修改服务器" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ble_label_title_style"
+                    android:text="端口:" />
+
+                <EditText
+                    android:id="@+id/edt_port"
+                    style="@style/ble_label_content_style"
+                    android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+	            <Button
+	                android:id="@+id/btn_change_port"
+	                style="@style/button_ble_style"
+	                android:text="修改端口" />
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+	            <Button
+	                android:id="@+id/btn_transportation_mode"
+	                style="@style/button_ble_style"
+	                android:text="运输模式" />
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+	            <Button
+	                android:id="@+id/btn_test_acce"
+	                style="@style/button_ble_style"
+	                android:text="测试ACCE" />
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+	            <Button
+	                android:id="@+id/btn_test_gprs"
+	                style="@style/button_ble_style"
+	                android:text="测试GPRS" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

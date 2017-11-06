@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_top_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingRight="5dp" >
+
+    <ImageButton
+        android:id="@+id/ib_title_return"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:gravity="left|center_vertical"
+        android:onClick="titleMenuClick"
+        android:src="@drawable/bg_title_return" />
+
+    <TextView
+        android:id="@+id/tv_title_name"
+        style="@style/global_system_title_text_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/title_devices" />
+
+    <Button
+        android:id="@+id/ib_title_search"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_title_search"
+        android:contentDescription="@string/app_name"
+        android:onClick="titleMenuClick" />
+
+    <ProgressBar
+        android:id="@+id/pb_title_refresh"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center"
+        android:onClick="titleMenuClick"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:visibility="gone" />
+
+</LinearLayout>

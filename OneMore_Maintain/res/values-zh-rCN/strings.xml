@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">蓝牙维护</string>
+    <string name="title_devices">设备列表</string>
+    <string name="empty_scan_list">没有搜索到设备</string>
+    <!-- Dialog strings -->
+    <string name="dialog_error_no_ble">您的设备不支持BLE.</string>
+    <string name="dialog_error_no_bluetooth">您的设备不支持蓝牙功能.</string>
+    <string name="dialog_enable_bluetooth">请开启蓝牙设备以便搜索周围的设备.</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="turn_on">开启</string>
+	<string name="setting">设置</string>
+	<!-- time function -->
+	<string name="time_function">定时功能</string>
+	<string name="time_function_add">添加定时功能</string>	
+	<string name="time_function_modify">编辑定时功能</string>	
+	<string name="title_time_time">定时时间</string>				
+	<string name="title_repeat">循环模式</string>	
+	<string name="time_time">定时时间 :</string>				
+	<string name="repeat">循环模式:</string>			
+	<string name="power_switch">开关状态:</string>		
+	<string name="power_on">开启</string>
+	<string name="power_off">关闭</string>			
+	<string name="color_temperature">色温调节:</string>		
+	<string name="color_warm">暖色</string>
+	<string name="color_cool">冷色</string>
+	<string name="light_brightness">灯光亮度:</string>		
+
+	<string name="am">上午</string>
+	<string name="pm">下午</string>
+	<string name="sunday">周天</string>
+	<string name="monday">周一</string>
+	<string name="tuesday">周二</string>
+	<string name="wednesday">周三</string>
+	<string name="thursday">周四</string>
+	<string name="friday">周五</string>
+	<string name="saturday">周六</string>
+	<string name="workday">工作日</string>
+	<string name="week_end">周末</string>
+	<string name="week_all">每天</string>
+	<string name="once">单次</string>	
+	<string name="button_save">保存</string>
+	<string name="button_cancel">取消</string> 
+	<string name="button_confirm">确认</string>
+	<string name="button_delete">删除</string>
+	<string name="button_rename">重命名</string>
+	<string name="button_edit">编辑</string>    
+	<string name="time_function_add_success">定时功能添加成功!</string>	
+	<string name="time_function_add_failth">定时功能添加失败，请重试!</string>	
+	<string name="time_function_modify_success">定时功能修改成功!</string>	
+	<string name="time_function_modify_failth">定时功能修改失败，请重试!</string>	
+	<string name="open_light_failth">开启灯光失败，请重试!</string>	
+	<string name="close_light_failth">关闭灯光失败，请重试!</string>
+	<string name="change_light_brightness_failth">调整灯光亮度失败，请重试!</string>
+	<string name="change_color_temperature_failth">更改冷暖色失败，请重试!</string>
+	<string name="set_device_time_success">设置设备时间成功!</string>
+	<string name="set_device_time_falith">设置设备时间失败，请重试!</string>
+	<string name="delete_confirm_text">确定删除 %1$s?</string>		
+	<string name="change_name_success">更改设备名称成功!设备需要重新启动，请稍候!</string>	
+	<string name="name_error_empty">名称不能为空!请重新输入!</string>
+	<string name="name_error_too_long">名称长度过长，请重新输入!</string>
+	<string name="change_name_failth">更改设备名称失败，请重试!</string>
+	<string name="delete_success">删除成功!</string>	
+	<string name="delete_failth">删除失败，请重试!</string>	
+	    
+	<string name="setting_device_time">设备时间</string>
+	<string name="setting_check_version">检查更新</string>
+	<string name="setting_current_version">当前版本:</string>
+	<string name="setting_buy_light">有木商城</string>
+	<string name="setting_contact_us">联系我们</string>
+	<string name="setting_about_us">关于我们</string>
+	<string name="datetime_year">年</string>
+	<string name="datetime_month">月</string>
+	<string name="datetime_day">日</string>
+	<string name="datetime_hour">时</string>
+	<string name="datetime_minute">分</string>
+	<string name="toast_title">提示信息</string>	
+	<string name="use_system_time">同步当前系统时间</string>
+	<string name="popupwindow_title">提示信息</string>
+	<string name="device_offline">当前设备已经断线，请重新连接！</string>
+    <string name="contact_us_wechat_info">欢迎前往微信关注有木创意公众号:umoohome</string>
+    <!-- Unknown values -->
+    <string name="unknown_device">未知设备</string>
+    <string name="unknown_characteristic">未知描述</string>
+    <string name="unknown_service">未知服务</string>
+
+    <string name="connect_device_wait">正在连接设备,请稍候&#8230;</string>
+    <string name="connect_device_error">连接设备失败,请重试!</string>
+	<string name="progress_wait">请稍候&#8230;</string>
+	<string name="device_offline_error">消息发送失败，网络发送超时或设备已经掉线！</string>
+</resources>
